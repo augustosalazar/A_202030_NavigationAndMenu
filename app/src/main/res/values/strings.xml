@@ -2,4 +2,9 @@
     <string name="app_name">NavigationAndMenu</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialog_title">El título del diálogo</string>
+    <string name="dialog_message">El mensaje del diálogo</string>
+    <string name="cancel">Cancelar</string>
+    <string name="decline">Declinar</string>
+    <string name="accept">Aceptar</string>
 </resources>

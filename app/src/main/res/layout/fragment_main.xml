@@ -32,9 +32,22 @@
         android:id="@+id/buttonAlert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="Dialogo"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="124dp"
+        android:text="Dialogo d Alerta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDialogoLista"
+        app:layout_constraintHorizontal_bias="0.176"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDialogoLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dialogo lista"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonAlert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonAlert" />
 </androidx.constraintlayout.widget.ConstraintLayout>
