@@ -23,6 +23,10 @@
         <action
             android:id="@+id/action_secondFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <argument
+            android:name="elParametro"
+            app:argType="integer"
+            android:defaultValue="99" />
     </fragment>
     <fragment
         android:id="@+id/setupFragment"
