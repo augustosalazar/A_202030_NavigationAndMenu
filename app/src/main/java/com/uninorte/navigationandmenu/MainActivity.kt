@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import androidx.navigation.findNavController
+import androidx.navigation.ui.onNavDestinationSelected
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
@@ -23,7 +24,10 @@ class MainActivity : AppCompatActivity() {
             Log.d("NavigationAndMenuDebug","action_favorite")
             true
         }
-
+        R.id.setupFragment -> {
+            // the navigation happens due to id match between menu and fragment
+            item.onNavDestinationSelected(findNavController(R.id.navHostFragment))
+        }
         else -> {
             // If we got here, the user's action was not recognized.
             // Invoke the superclass to handle it.

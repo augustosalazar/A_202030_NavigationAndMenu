@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 
 class MainFragment : Fragment() {
@@ -29,6 +30,8 @@ class MainFragment : Fragment() {
         view.findViewById<Button>(R.id.button).setOnClickListener{
             findNavController().navigate(R.id.action_mainFragment_to_secondFragment)
         }
+
+
     }
 
 

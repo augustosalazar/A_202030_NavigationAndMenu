@@ -6,4 +6,10 @@
         android:icon="@android:drawable/btn_star"
         android:title="Fav"
         app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/setupFragment"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Setup"
+        app:showAsAction="ifRoom"/>
 </menu>

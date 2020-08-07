@@ -24,4 +24,9 @@
             android:id="@+id/action_secondFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="com.uninorte.navigationandmenu.SetupFragment"
+        android:label="fragment_setup"
+        tools:layout="@layout/fragment_setup" />
 </navigation>
